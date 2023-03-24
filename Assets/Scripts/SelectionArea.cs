@@ -7,6 +7,7 @@ public class SelectionArea : MonoBehaviour
     public int count = 0;
     public GameObject ground;
     public GameObject groundWithSpring;
+    public Behaviour halo;
 
     void OnMouseDown() {
         count++;
@@ -14,9 +15,11 @@ public class SelectionArea : MonoBehaviour
             count = 0;
         }
         if (count == 0) {
+            halo.enabled = true;
             groundWithSpring.SetActive(false);
         }
         if (count == 1) {
+            halo.enabled = false;
             ground.SetActive(true);
         }
         if(count == 2) {

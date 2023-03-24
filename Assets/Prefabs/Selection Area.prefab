@@ -128,6 +128,7 @@ MonoBehaviour:
   count: 0
   ground: {fileID: 5555743074161786056}
   groundWithSpring: {fileID: 664907415168422972}
+  halo: {fileID: 5536425354319099100}
 --- !u!1001 &2081206755555021954
 PrefabInstance:
   m_ObjectHideFlags: 0

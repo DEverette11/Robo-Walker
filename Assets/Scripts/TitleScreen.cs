@@ -8,6 +8,6 @@ public class TitleScreen : MonoBehaviour
 
     public void NextScene()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Instructions Scene");
     }
 }

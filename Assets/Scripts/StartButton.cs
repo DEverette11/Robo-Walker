@@ -9,7 +9,6 @@ public class StartButton : MonoBehaviour
     public GameObject startButton;
 
     public void StartPressed() {
-        FollowRobotCamera.POI = robotPrefab;
         startButton.SetActive(false);
     }    
 

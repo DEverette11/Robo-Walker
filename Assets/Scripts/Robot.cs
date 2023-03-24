@@ -22,7 +22,12 @@ public class Robot : MonoBehaviour
             robotPrefab.transform.position = pos;   
         }
         if (robotPrefab.transform.position.y <= -5) {
-            SceneManager.LoadScene("Level 1 Game Over Scene");
+            if (SceneManager.GetActiveScene().name == "Level 1") {
+                SceneManager.LoadScene("Level 1 Game Over Scene");
+            }
+            if (SceneManager.GetActiveScene().name == "Level 2") {
+                SceneManager.LoadScene("Level 2 Game Over Scene");
+            }
         }
     }
 }
